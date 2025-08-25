@@ -1,0 +1,107 @@
+/* Footer Base */
+.footer {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  color: #f0f0f0;
+  padding: 50px 20px 25px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* ✅ centers sections */
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center; /* ✅ keeps everything centered */
+}
+
+/* Footer Sections */
+.footer-section {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.footer-section h3, 
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #ffa500; /* Accent orange */
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ffa500;
+  display: inline-block;
+  padding-bottom: 5px;
+  
+}
+
+.footer-section p, 
+.footer-section li, 
+.footer-section a {
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  list-style: none;
+}
+
+.footer-section a:hover {
+  color: #ffa500;
+}
+
+/* Social Links */
+.footer-section .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-section .social-links a {
+  color: #ffa500;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-section .social-links a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+  /* Quick Links UL fix */
+.footer-section ul {
+  list-style: none;   /* remove bullets */
+  padding: 0;
+  margin: 0 auto;     /* center horizontally */
+  text-align: center; /* center list items */
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+}

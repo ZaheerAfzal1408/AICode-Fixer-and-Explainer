@@ -1,0 +1,112 @@
+/* Global Styles */
+main {
+  margin-top: 100px;
+  padding: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  align-items: center;
+}
+
+
+/* Heading */
+main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  font-family: monospace;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+/* Language Dropdown */
+.language-select {
+  width: 100%;
+  max-width: 250px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.explain-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* Explain Button */
+.explain-btn {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explain-btn:hover {
+  background-color: #fb8c00;
+}
+
+.explain-btn:disabled {
+  background-color: #ffcc80;
+  cursor: not-allowed;
+}
+
+/* Output Box */
+.output {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+  border-radius: 8px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  min-height: 150px;
+  line-height: 1.5rem;
+  color: #5d4037;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  main h2 {
+    font-size: 1.8rem;
+  }
+
+  .language-select,
+  .explain-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main h2 {
+    font-size: 1.5rem;
+    max-width: 85%;
+  }
+  textarea {
+    min-height: 150px;
+  }
+
+  .output {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
